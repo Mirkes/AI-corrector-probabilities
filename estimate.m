@@ -10,11 +10,8 @@ function [general, detailed] = estimate(mdl, delta, data, predicted)
 % point. The last can be used for estimation of probability that prediction
 % is correct.    
 %
-% This work implemented theory developed in 
-% Tyukin, I.Y., Tyukina, T., van Helden, D., Zhang, Z., Mirkes, E.M.,
-% Sutton, O.J., Zhou, Q., Gorban, A.N. and Allison, P., 2024. Weakly
-% Supervised Learners for Correction of AI Errors with Provable Performance
-% Guarantees. arXiv preprint arXiv:2402.00899. 
+% This work implemented theory developed in
+% Add reference after acceptance of paper
 %
 % Inputs:
 %   mdl is model created by modelCreator function. THis model contains

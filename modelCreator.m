@@ -4,10 +4,7 @@ function model = modelCreator(x, labels, prediction, varargin)
 %individual score of each case
 %
 % This work implemented theory developed in 
-% Tyukin, I.Y., Tyukina, T., van Helden, D., Zhang, Z., Mirkes, E.M.,
-% Sutton, O.J., Zhou, Q., Gorban, A.N. and Allison, P., 2024. Weakly
-% Supervised Learners for Correction of AI Errors with Provable Performance
-% Guarantees. arXiv preprint arXiv:2402.00899. 
+% Add reference after acceptance of paper
 %
 %Inputs
 %   x is N-by-M matrix which contains test set points. One row contains one
