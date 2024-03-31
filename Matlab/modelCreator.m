@@ -3,6 +3,9 @@ function model = modelCreator(x, labels, prediction, varargin)
 %classifier prediction for specified deltas, for Fisher's thresholds or for
 %individual score of each case
 %
+% This work implemented theory developed in 
+% Add reference after acceptance of paper
+%
 %Inputs
 %   x is N-by-M matrix which contains test set points. One row contains one
 %       observation.

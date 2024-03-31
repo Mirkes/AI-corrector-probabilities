@@ -10,6 +10,9 @@ function [general, detailed] = estimate(mdl, delta, data, predicted)
 % point. The last can be used for estimation of probability that prediction
 % is correct.    
 %
+% This work implemented theory developed in
+% Add reference after acceptance of paper
+%
 % Inputs:
 %   mdl is model created by modelCreator function. THis model contains
 %       following fields
