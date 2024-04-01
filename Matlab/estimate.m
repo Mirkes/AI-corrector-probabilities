@@ -213,7 +213,7 @@ end
 
 function res = psi(a, d)
     % Interval in which we want to find inf / sup of rho and psi
-    eps = linspace(0, a, 1000);
+    eps = linspace(0, 1 - a, 1000);
     % Calculate function
     buff = 2 * exp(-2 * eps .^2 * d) + min(1, eps + a);
     res = min(min(buff), 1);
