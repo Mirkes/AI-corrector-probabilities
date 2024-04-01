@@ -204,8 +204,6 @@ function [general, detailed] = estimate(mdl, delta, data, predicted)
 end
 
 function res = rho(a, d)
-    % Grid size
-    N=1000;
     % Interval in which we want to find inf / sup of rho and psi
     eps = linspace(0, a, 1000);
     % Calculate function
@@ -214,8 +212,6 @@ function res = rho(a, d)
 end
 
 function res = psi(a, d)
-    % Grid size
-    N=1000;
     % Interval in which we want to find inf / sup of rho and psi
     eps = linspace(0, a, 1000);
     % Calculate function
@@ -227,6 +223,8 @@ function res = inverseCDF(sets, delta)
     k = floor(delta * length(sets));
     if k < 2
         res = sets(1) - 0.001 * abs(sets(1));
+    elseif k == length(sets)
+        res = sets(end) + 0.001 * abs(sets(end));
     else
         res = (sets(k) + sets(k + 1)) / 2;
     end
