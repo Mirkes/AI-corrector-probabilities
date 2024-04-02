@@ -326,18 +326,16 @@ class RejectAcceptModel:
             Threshold is used threshold for rejection (if score is less than
                 threshold, then prediction of classifier is rejected).
                 Threshold is equal to score calculated for current point.
-       Delta is fraction of false positives with smaller score
-       Delta_A is fraction of true positives with smaller score
-       LowBoundReject is lower boundary of probability of correct rejection
-           (equation (8) in journal paper).
-       UpBoundReject is upper boundary of probability of correct rejection
-           (equation (8) in journal paper).
-       LowBoundAccept is lower boundary of probability of correct
-           acceptance (equation (7) in journal paper).
-       UpBoundAccept is upper boundary of probability of correct
-           acceptance (equation (7) in journal paper).
-
-
+            Delta is fraction of false positives with smaller score
+            Delta_A is fraction of true positives with smaller score
+            LowBoundReject is lower boundary of probability of correct 
+                rejection (equation (8) in journal paper).
+           UpBoundReject is upper boundary of probability of correct rejection
+               (equation (8) in journal paper).
+           LowBoundAccept is lower boundary of probability of correct
+               acceptance (equation (7) in journal paper).
+           UpBoundAccept is upper boundary of probability of correct
+               acceptance (equation (7) in journal paper).
         '''
         # Check correctness of data defining
         if  not isinstance(data, np.ndarray) or data.ndim != 2 \
